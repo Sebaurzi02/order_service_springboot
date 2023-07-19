@@ -8,6 +8,13 @@ public class OrderRequest {
 	public OrderRequest() {
 		
 	}
+
+	public OrderRequest(List<OrderLineItemsDto> orderLineItemsDtoList) {
+		this.orderLineItemsDtoList = orderLineItemsDtoList;
+	}
 	
+	public List<OrderLineItemsDto> getOrderLineItemsDtoList(){
+		return this.orderLineItemsDtoList;
+	}
 
 }

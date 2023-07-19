@@ -1,7 +1,5 @@
 package com.service2.order_service.dto;
 
-import java.util.List;
-
 public class OrderLineItemsDto {
 	private Long id;
 	private String skuCode;
