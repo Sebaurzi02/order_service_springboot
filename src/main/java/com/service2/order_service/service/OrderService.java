@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.UUID;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.service2.order_service.dto.OrderRequest;
 import com.service2.order_service.model.OrderLineItems;
@@ -12,6 +13,7 @@ import com.service2.order_service.dto.OrderLineItemsDto;
 import com.service2.order_service.model.Order;
 
 @Service
+@Transactional
 public class OrderService {
 	
 	private final OrderRepository orderRepository;
